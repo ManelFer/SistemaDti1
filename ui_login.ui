@@ -167,6 +167,9 @@ color: rgb(4, 99, 51);
 }
 </string>
              </property>
+             <property name="echoMode">
+              <enum>QLineEdit::EchoMode::Password</enum>
+             </property>
              <property name="placeholderText">
               <string>Senha</string>
              </property>
@@ -226,9 +229,9 @@ QPushButton{
             <widget class="QLabel" name="txt_pass">
              <property name="geometry">
               <rect>
-               <x>30</x>
+               <x>25</x>
                <y>90</y>
-               <width>49</width>
+               <width>61</width>
                <height>16</height>
               </rect>
              </property>
