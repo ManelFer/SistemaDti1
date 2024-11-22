@@ -171,7 +171,7 @@ class Ui_Login(object):
         self.line_user.setPlaceholderText(QCoreApplication.translate("Login", u"Usu\u00e1rio", None))
         self.line_pass.setPlaceholderText(QCoreApplication.translate("Login", u"Senha", None))
         self.btn_login.setText(QCoreApplication.translate("Login", u"Login", None))
-        self.txt_user.setText(QCoreApplication.translate("Login", u"<html><head/><body><p><span style=\" font-size:10pt; font-weight:700;\">Usuer</span></p></body></html>", None))
+        self.txt_user.setText(QCoreApplication.translate("Login", u"<html><head/><body><p><span style=\" font-size:10pt; font-weight:700;\">User</span></p></body></html>", None))
         self.txt_pass.setText(QCoreApplication.translate("Login", u"<html><head/><body><p><span style=\" font-size:10pt; font-weight:700;\">Password</span></p></body></html>", None))
     # retranslateUi
 
