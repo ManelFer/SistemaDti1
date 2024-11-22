@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main.ui'
+## Form generated from reading UI file 'ui_main.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.0
 ##
@@ -20,7 +20,7 @@ from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
     QPushButton, QSizePolicy, QSpacerItem, QStackedWidget,
     QTabWidget, QTableWidget, QTableWidgetItem, QToolBox,
     QVBoxLayout, QWidget)
-import icons_rc
+import icons__rc
 
 class Ui_Main(object):
     def setupUi(self, Main):
@@ -465,8 +465,8 @@ class Ui_Main(object):
         self.retranslateUi(Main)
 
         self.toolBox.setCurrentIndex(0)
-        self.Pages.setCurrentIndex(3)
-        self.tabWidget.setCurrentIndex(1)
+        self.Pages.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(Main)
@@ -477,8 +477,8 @@ class Ui_Main(object):
         self.label_3.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:700;\">DTI Controle</span></p></body></html>", None))
         self.btn_home.setText(QCoreApplication.translate("Main", u"Home", None))
         self.btn_cadastrar.setText(QCoreApplication.translate("Main", u"Cadastrar", None))
-        self.btn_contatos.setText(QCoreApplication.translate("Main", u"Contatos", None))
-        self.btn_sobre.setText(QCoreApplication.translate("Main", u"Sobre", None))
+        self.btn_contatos.setText(QCoreApplication.translate("Main", u"Sobre", None))
+        self.btn_sobre.setText(QCoreApplication.translate("Main", u"Contatos", None))
         self.toolBox.setItemText(self.toolBox.indexOf(self.page), QCoreApplication.translate("Main", u"Page 1", None))
         self.label_11.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><span style=\" font-weight:700;\">Usu\u00e1rio:</span> Manoel</p><p align=\"center\"><span style=\" font-weight:700;\">Sistema:</span> Controle</p><p align=\"center\"><span style=\" font-weight:700;\">Status:</span> Ativo</p><p align=\"center\"><span style=\" font-weight:700;\">Hora:</span> hh:mm</p></body></html>", None))
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_2), QCoreApplication.translate("Main", u"Page 2", None))
