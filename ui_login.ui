@@ -128,7 +128,7 @@
             <widget class="QLineEdit" name="line_user">
              <property name="geometry">
               <rect>
-               <x>90</x>
+               <x>100</x>
                <y>30</y>
                <width>181</width>
                <height>22</height>
@@ -151,7 +151,7 @@ color: rgb(4, 99, 51);
             <widget class="QLineEdit" name="line_pass">
              <property name="geometry">
               <rect>
-               <x>90</x>
+               <x>100</x>
                <y>90</y>
                <width>181</width>
                <height>22</height>
@@ -166,6 +166,9 @@ background-color: rgb(249, 248, 235);
 color: rgb(4, 99, 51);
 }
 </string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::EchoMode::Password</enum>
              </property>
              <property name="placeholderText">
               <string>Senha</string>
@@ -226,9 +229,9 @@ QPushButton{
             <widget class="QLabel" name="txt_pass">
              <property name="geometry">
               <rect>
-               <x>30</x>
+               <x>20</x>
                <y>90</y>
-               <width>49</width>
+               <width>71</width>
                <height>16</height>
               </rect>
              </property>
