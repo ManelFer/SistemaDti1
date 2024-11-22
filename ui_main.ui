@@ -342,7 +342,7 @@ QPushButton{
           <property name="bottomMargin">
            <number>9</number>
           </property>
-          <item>
+          <item alignment="">
            <widget class="QPushButton" name="btn_toggle">
             <property name="text">
              <string/>
@@ -663,6 +663,114 @@ QPushButton{
                     </property>
                     <property name="text">
                      <string>Cadastrar</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab_3">
+                 <attribute name="title">
+                  <string>Saída</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_15">
+                  <item>
+                   <widget class="QLabel" name="label_13">
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(4, 99, 51);
+backgroun-color: rgb(249, 248, 235);</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:700;&quot;&gt;Saída&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_7">
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit{
+ background-color: rgb(249, 248, 235);
+ color:rgb(76, 76, 76);
+ font: 10pt;
+}
+QFrame{
+ background-color: rgb(231,231,231);
+}</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::Shape::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Shadow::Raised</enum>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_3">
+                     <item row="0" column="0">
+                      <widget class="QLineEdit" name="txt_patrimonio_3_saida">
+                       <property name="placeholderText">
+                        <string>Patrimonio</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QLineEdit" name="txt_marca_3_saida">
+                       <property name="placeholderText">
+                        <string>Marca</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="2">
+                      <widget class="QLineEdit" name="txt_modelo_3_saida">
+                       <property name="placeholderText">
+                        <string>Modelo</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLineEdit" name="txt_quantidade_3_saida">
+                       <property name="placeholderText">
+                        <string>Quantidade</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QLineEdit" name="txt_n_os">
+                       <property name="placeholderText">
+                        <string>número da Os</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_3">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>31</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton:hover {
+  background-color: rgb(84, 144, 124);
+   border-radius:15px;
+  color:rgb(255, 255, 255)
+}
+
+QPushButton{
+  border-radius:15px;
+  color: rgb(4, 99, 51);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Retirar</string>
                     </property>
                    </widget>
                   </item>
