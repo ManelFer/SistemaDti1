@@ -134,6 +134,16 @@
                <height>22</height>
               </rect>
              </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+background-color: rgb(249, 248, 235);
+color: rgb(4, 99, 51);
+}
+</string>
+             </property>
              <property name="placeholderText">
               <string>Usuário</string>
              </property>
@@ -146,6 +156,16 @@
                <width>181</width>
                <height>22</height>
               </rect>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+background-color: rgb(249, 248, 235);
+color: rgb(4, 99, 51);
+}
+</string>
              </property>
              <property name="placeholderText">
               <string>Senha</string>
@@ -166,6 +186,9 @@
                <bold>true</bold>
               </font>
              </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
              <property name="styleSheet">
               <string notr="true">QPushButton:hover {
   background-color: rgb(88, 148, 120);
@@ -177,7 +200,7 @@ QPushButton{
  
 	background-color: rgb(247, 247, 234);
   border-radius:15px;
-  color: rgbrgb(11, 84, 48);
+  color: rgb(11, 84, 48);
 }</string>
              </property>
              <property name="text">
