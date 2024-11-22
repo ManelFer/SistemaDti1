@@ -11,11 +11,12 @@ class Login(QMainWindow, Ui_Login):
         self.setWindowTitle("DTI - Sistema de controle")
         appIcon = QIcon(u"src_img/icons/")
         self.setWindowIcon(appIcon)
+        self.btn_login.clicked.connect(self.open_system)
 
     def open_system(self):
         if self.line_pass.text() == '123':
-            self.w = Ui_Main()
-            self.w.show()
+            self.main_window = Main()
+            self.main_window.show()
             self.close()
         else:
             print('Senha inválida')
