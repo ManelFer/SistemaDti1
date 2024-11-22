@@ -385,6 +385,78 @@ class Ui_Main(object):
         self.verticalLayout_10.addWidget(self.pushButton)
 
         self.tabWidget.addTab(self.tab_2, "")
+        self.tab_3 = QWidget()
+        self.tab_3.setObjectName(u"tab_3")
+        self.verticalLayout_15 = QVBoxLayout(self.tab_3)
+        self.verticalLayout_15.setObjectName(u"verticalLayout_15")
+        self.label_13 = QLabel(self.tab_3)
+        self.label_13.setObjectName(u"label_13")
+        self.label_13.setStyleSheet(u"color: rgb(4, 99, 51);\n"
+"backgroun-color: rgb(249, 248, 235);")
+
+        self.verticalLayout_15.addWidget(self.label_13)
+
+        self.frame_7 = QFrame(self.tab_3)
+        self.frame_7.setObjectName(u"frame_7")
+        self.frame_7.setStyleSheet(u"QLineEdit{\n"
+" background-color: rgb(249, 248, 235);\n"
+" color:rgb(76, 76, 76);\n"
+" font: 10pt;\n"
+"}\n"
+"QFrame{\n"
+" background-color: rgb(231,231,231);\n"
+"}")
+        self.frame_7.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_7.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_3 = QGridLayout(self.frame_7)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.txt_patrimonio_3_saida = QLineEdit(self.frame_7)
+        self.txt_patrimonio_3_saida.setObjectName(u"txt_patrimonio_3_saida")
+
+        self.gridLayout_3.addWidget(self.txt_patrimonio_3_saida, 0, 0, 1, 1)
+
+        self.txt_marca_3_saida = QLineEdit(self.frame_7)
+        self.txt_marca_3_saida.setObjectName(u"txt_marca_3_saida")
+
+        self.gridLayout_3.addWidget(self.txt_marca_3_saida, 0, 1, 1, 1)
+
+        self.txt_modelo_3_saida = QLineEdit(self.frame_7)
+        self.txt_modelo_3_saida.setObjectName(u"txt_modelo_3_saida")
+
+        self.gridLayout_3.addWidget(self.txt_modelo_3_saida, 0, 2, 1, 1)
+
+        self.txt_quantidade_3_saida = QLineEdit(self.frame_7)
+        self.txt_quantidade_3_saida.setObjectName(u"txt_quantidade_3_saida")
+
+        self.gridLayout_3.addWidget(self.txt_quantidade_3_saida, 1, 0, 1, 1)
+
+        self.txt_n_os = QLineEdit(self.frame_7)
+        self.txt_n_os.setObjectName(u"txt_n_os")
+
+        self.gridLayout_3.addWidget(self.txt_n_os, 1, 1, 1, 1)
+
+
+        self.verticalLayout_15.addWidget(self.frame_7)
+
+        self.pushButton_3 = QPushButton(self.tab_3)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setMinimumSize(QSize(0, 31))
+        self.pushButton_3.setFont(font1)
+        self.pushButton_3.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.pushButton_3.setStyleSheet(u"QPushButton:hover {\n"
+"  background-color: rgb(84, 144, 124);\n"
+"   border-radius:15px;\n"
+"  color:rgb(255, 255, 255)\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"  border-radius:15px;\n"
+"  color: rgb(4, 99, 51);\n"
+"}")
+
+        self.verticalLayout_15.addWidget(self.pushButton_3)
+
+        self.tabWidget.addTab(self.tab_3, "")
 
         self.verticalLayout_7.addWidget(self.tabWidget)
 
@@ -503,6 +575,14 @@ class Ui_Main(object):
         self.txt_patrimonio.setPlaceholderText(QCoreApplication.translate("Main", u"Patrimonio", None))
         self.pushButton.setText(QCoreApplication.translate("Main", u"Cadastrar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("Main", u"Cadastrar", None))
+        self.label_13.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:700;\">Sa\u00edda</span></p></body></html>", None))
+        self.txt_patrimonio_3_saida.setPlaceholderText(QCoreApplication.translate("Main", u"Patrimonio", None))
+        self.txt_marca_3_saida.setPlaceholderText(QCoreApplication.translate("Main", u"Marca", None))
+        self.txt_modelo_3_saida.setPlaceholderText(QCoreApplication.translate("Main", u"Modelo", None))
+        self.txt_quantidade_3_saida.setPlaceholderText(QCoreApplication.translate("Main", u"Quantidade", None))
+        self.txt_n_os.setPlaceholderText(QCoreApplication.translate("Main", u"n\u00famero da Os", None))
+        self.pushButton_3.setText(QCoreApplication.translate("Main", u"Retirar", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate("Main", u"Sa\u00edda", None))
         self.label_10.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:700;\">Contatos</span></p></body></html>", None))
         self.label_6.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><img src=\":/icons/icons/whatsApp.png\"/><span style=\" font-size:18pt; vertical-align:super;\">(79) 9 9918-9735</span></p></body></html>", None))
         self.label_9.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><img src=\":/icons/icons/email.png\"/><span style=\" font-size:18pt; vertical-align:super;\">manoelferreiramatos.ti@gmail.com</span></p></body></html>", None))
