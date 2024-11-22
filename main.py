@@ -3,6 +3,7 @@ from PySide6.QtGui import QIcon
 from ui_login import Ui_Login
 from ui_main import Ui_Main
 import sys
+from database import DataBase
 
 class Login(QMainWindow, Ui_Login):
     def __init__(self):
@@ -30,7 +31,7 @@ class Main(QMainWindow, Ui_Main):
         #****************PAGINAS DO SISTEMA****************
         self.btn_home.clicked.connect(lambda: self.Pages.setCurrentWidget(self.pg_1_home))
         self.btn_cadastrar.clicked.connect(lambda: self.Pages.setCurrentWidget(self.pg_2_cadastrar))
-        self.btn_contatos.clicked.connect(lambda: self.Pages.setCurrentWidget(self.pg_3_produtos)) # tem um error nessa parte, os nomes estão trocados com o sobre e não é produtos é sobre
+        self.btn_contatos.clicked.connect(lambda: self.Pages.setCurrentWidget(self.pg_3_produtos)) # essa pg3 não é sobre produtos mas sim sobre contatos
         self.btn_sobre.clicked.connect(lambda: self.Pages.setCurrentWidget(self.pg_4_sobre))
 
 if __name__ == "__main__":
