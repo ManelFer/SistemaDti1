@@ -128,7 +128,7 @@
             <widget class="QLineEdit" name="line_user">
              <property name="geometry">
               <rect>
-               <x>100</x>
+               <x>90</x>
                <y>30</y>
                <width>181</width>
                <height>22</height>
@@ -151,7 +151,7 @@ color: rgb(4, 99, 51);
             <widget class="QLineEdit" name="line_pass">
              <property name="geometry">
               <rect>
-               <x>100</x>
+               <x>90</x>
                <y>90</y>
                <width>181</width>
                <height>22</height>
@@ -220,15 +220,15 @@ QPushButton{
               <string notr="true">color: rgb(247, 247, 234);</string>
              </property>
              <property name="text">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;User&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Usuer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
             </widget>
             <widget class="QLabel" name="txt_pass">
              <property name="geometry">
               <rect>
-               <x>20</x>
+               <x>30</x>
                <y>90</y>
-               <width>71</width>
+               <width>49</width>
                <height>16</height>
               </rect>
              </property>
