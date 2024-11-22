@@ -119,6 +119,7 @@ class Ui_Login(object):
 "color: rgb(4, 99, 51);\n"
 "}\n"
 "")
+        self.line_pass.setEchoMode(QLineEdit.EchoMode.Password)
         self.btn_login = QPushButton(self.frame_3)
         self.btn_login.setObjectName(u"btn_login")
         self.btn_login.setGeometry(QRect(90, 130, 181, 31))
@@ -145,7 +146,7 @@ class Ui_Login(object):
         self.txt_user.setStyleSheet(u"color: rgb(247, 247, 234);")
         self.txt_pass = QLabel(self.frame_3)
         self.txt_pass.setObjectName(u"txt_pass")
-        self.txt_pass.setGeometry(QRect(30, 90, 49, 16))
+        self.txt_pass.setGeometry(QRect(25, 90, 61, 16))
         self.txt_pass.setStyleSheet(u"color: rgb(247, 247, 234);")
 
         self.verticalLayout_2.addWidget(self.frame_3)
