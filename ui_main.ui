@@ -227,7 +227,7 @@ QPushButton{
                  <cursorShape>PointingHandCursor</cursorShape>
                 </property>
                 <property name="text">
-                 <string>Contatos</string>
+                 <string>Sobre</string>
                 </property>
                </widget>
               </item>
@@ -248,7 +248,7 @@ QPushButton{
                  <cursorShape>PointingHandCursor</cursorShape>
                 </property>
                 <property name="text">
-                 <string>Sobre</string>
+                 <string>Contatos</string>
                 </property>
                </widget>
               </item>
@@ -405,14 +405,14 @@ QPushButton{
           <item>
            <widget class="QStackedWidget" name="Pages">
             <property name="currentIndex">
-             <number>3</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="pg_2_cadastrar">
              <layout class="QVBoxLayout" name="verticalLayout_7">
               <item>
                <widget class="QTabWidget" name="tabWidget">
                 <property name="currentIndex">
-                 <number>1</number>
+                 <number>0</number>
                 </property>
                 <widget class="QWidget" name="tab">
                  <attribute name="title">
