@@ -28,6 +28,21 @@ class DataBase():
             """)
         except AttributeError:
             print("faça a conexão")
+    
+    def create_table_cadastro(self):
+        try:
+            cursor = self.connection.cursor()
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS cadastro(
+                    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+                           patrimonio TEXT UNIQUE NOT NULL,
+                           marca TEXT NOT NULL,
+                           modelo TEXT NOT NULL,
+                           quantidade TEXT NOT NULL, 
+                );
+            """)
+        except AttributeError:
+            print("faça a conexão")
 
 if __name__ == "__main__":
     db = DataBase()
