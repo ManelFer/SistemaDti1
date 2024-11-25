@@ -186,15 +186,6 @@ class Ui_Main(object):
         self.horizontalLayout_2.setSpacing(0)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.horizontalLayout_2.setContentsMargins(9, 9, 9, 9)
-        self.btn_toggle = QPushButton(self.top_frame)
-        self.btn_toggle.setObjectName(u"btn_toggle")
-        icon = QIcon()
-        icon.addFile(u":/icons/icons/menu2.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.btn_toggle.setIcon(icon)
-        self.btn_toggle.setIconSize(QSize(32, 32))
-
-        self.horizontalLayout_2.addWidget(self.btn_toggle)
-
         self.label = QLabel(self.top_frame)
         self.label.setObjectName(u"label")
 
@@ -341,25 +332,20 @@ class Ui_Main(object):
         self.frame_4.setFrameShadow(QFrame.Shadow.Raised)
         self.gridLayout = QGridLayout(self.frame_4)
         self.gridLayout.setObjectName(u"gridLayout")
-        self.txt_quantidade = QLineEdit(self.frame_4)
-        self.txt_quantidade.setObjectName(u"txt_quantidade")
-
-        self.gridLayout.addWidget(self.txt_quantidade, 2, 0, 1, 1)
-
         self.txt_modelo = QLineEdit(self.frame_4)
         self.txt_modelo.setObjectName(u"txt_modelo")
 
         self.gridLayout.addWidget(self.txt_modelo, 0, 2, 1, 1)
 
-        self.txt_marca = QLineEdit(self.frame_4)
-        self.txt_marca.setObjectName(u"txt_marca")
-
-        self.gridLayout.addWidget(self.txt_marca, 0, 1, 1, 1)
-
         self.txt_patrimonio = QLineEdit(self.frame_4)
         self.txt_patrimonio.setObjectName(u"txt_patrimonio")
 
         self.gridLayout.addWidget(self.txt_patrimonio, 0, 0, 1, 1)
+
+        self.txt_marca = QLineEdit(self.frame_4)
+        self.txt_marca.setObjectName(u"txt_marca")
+
+        self.gridLayout.addWidget(self.txt_marca, 0, 1, 1, 1)
 
 
         self.verticalLayout_10.addWidget(self.frame_4)
@@ -408,32 +394,27 @@ class Ui_Main(object):
 "}")
         self.frame_7.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame_7.setFrameShadow(QFrame.Shadow.Raised)
-        self.gridLayout_3 = QGridLayout(self.frame_7)
-        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.gridLayout_2 = QGridLayout(self.frame_7)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
         self.txt_patrimonio_3_saida = QLineEdit(self.frame_7)
         self.txt_patrimonio_3_saida.setObjectName(u"txt_patrimonio_3_saida")
 
-        self.gridLayout_3.addWidget(self.txt_patrimonio_3_saida, 0, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.txt_patrimonio_3_saida, 0, 0, 1, 1)
 
         self.txt_marca_3_saida = QLineEdit(self.frame_7)
         self.txt_marca_3_saida.setObjectName(u"txt_marca_3_saida")
 
-        self.gridLayout_3.addWidget(self.txt_marca_3_saida, 0, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.txt_marca_3_saida, 0, 1, 1, 1)
 
         self.txt_modelo_3_saida = QLineEdit(self.frame_7)
         self.txt_modelo_3_saida.setObjectName(u"txt_modelo_3_saida")
 
-        self.gridLayout_3.addWidget(self.txt_modelo_3_saida, 0, 2, 1, 1)
-
-        self.txt_quantidade_3_saida = QLineEdit(self.frame_7)
-        self.txt_quantidade_3_saida.setObjectName(u"txt_quantidade_3_saida")
-
-        self.gridLayout_3.addWidget(self.txt_quantidade_3_saida, 1, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.txt_modelo_3_saida, 0, 2, 1, 1)
 
         self.txt_n_os = QLineEdit(self.frame_7)
         self.txt_n_os.setObjectName(u"txt_n_os")
 
-        self.gridLayout_3.addWidget(self.txt_n_os, 1, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.txt_n_os, 1, 1, 1, 1)
 
 
         self.verticalLayout_15.addWidget(self.frame_7)
@@ -554,8 +535,7 @@ class Ui_Main(object):
         self.toolBox.setItemText(self.toolBox.indexOf(self.page), QCoreApplication.translate("Main", u"Page 1", None))
         self.label_11.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><span style=\" font-weight:700;\">Usu\u00e1rio:</span> Manoel</p><p align=\"center\"><span style=\" font-weight:700;\">Sistema:</span> Controle</p><p align=\"center\"><span style=\" font-weight:700;\">Status:</span> Ativo</p><p align=\"center\"><span style=\" font-weight:700;\">Hora:</span> hh:mm</p></body></html>", None))
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_2), QCoreApplication.translate("Main", u"Page 2", None))
-        self.btn_toggle.setText("")
-        self.label.setText(QCoreApplication.translate("Main", u"<html><head/><body><p><span style=\" font-size:14pt; font-weight:700;\">Sistema de Controle</span></p></body></html>", None))
+        self.label.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:700;\">Sistema de Controle</span></p></body></html>", None))
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("Main", u"Patrimonio", None));
         ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
@@ -569,17 +549,15 @@ class Ui_Main(object):
         self.btn_excluir.setText(QCoreApplication.translate("Main", u"Excluir", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("Main", u"Produtos", None))
         self.label_5.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:700;\">Cadastrar</span></p></body></html>", None))
-        self.txt_quantidade.setPlaceholderText(QCoreApplication.translate("Main", u"Quantidade", None))
         self.txt_modelo.setPlaceholderText(QCoreApplication.translate("Main", u"Modelo", None))
-        self.txt_marca.setPlaceholderText(QCoreApplication.translate("Main", u"Marca", None))
         self.txt_patrimonio.setPlaceholderText(QCoreApplication.translate("Main", u"Patrimonio", None))
+        self.txt_marca.setPlaceholderText(QCoreApplication.translate("Main", u"Marca", None))
         self.pushButton.setText(QCoreApplication.translate("Main", u"Cadastrar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("Main", u"Cadastrar", None))
         self.label_13.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:700;\">Sa\u00edda</span></p></body></html>", None))
         self.txt_patrimonio_3_saida.setPlaceholderText(QCoreApplication.translate("Main", u"Patrimonio", None))
         self.txt_marca_3_saida.setPlaceholderText(QCoreApplication.translate("Main", u"Marca", None))
         self.txt_modelo_3_saida.setPlaceholderText(QCoreApplication.translate("Main", u"Modelo", None))
-        self.txt_quantidade_3_saida.setPlaceholderText(QCoreApplication.translate("Main", u"Quantidade", None))
         self.txt_n_os.setPlaceholderText(QCoreApplication.translate("Main", u"n\u00famero da Os", None))
         self.pushButton_3.setText(QCoreApplication.translate("Main", u"Retirar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate("Main", u"Sa\u00edda", None))
