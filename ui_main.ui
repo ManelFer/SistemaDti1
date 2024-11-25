@@ -342,27 +342,10 @@ QPushButton{
           <property name="bottomMargin">
            <number>9</number>
           </property>
-          <item alignment="">
-           <widget class="QPushButton" name="btn_toggle">
-            <property name="text">
-             <string/>
-            </property>
-            <property name="icon">
-             <iconset resource="src_img/icons_.qrc">
-              <normaloff>:/icons/icons/menu2.png</normaloff>:/icons/icons/menu2.png</iconset>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>32</width>
-              <height>32</height>
-             </size>
-            </property>
-           </widget>
-          </item>
           <item>
            <widget class="QLabel" name="label">
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Sistema de Controle&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Sistema de Controle&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>
@@ -602,13 +585,6 @@ QFrame{
                      <enum>QFrame::Shadow::Raised</enum>
                     </property>
                     <layout class="QGridLayout" name="gridLayout">
-                     <item row="2" column="0">
-                      <widget class="QLineEdit" name="txt_quantidade">
-                       <property name="placeholderText">
-                        <string>Quantidade</string>
-                       </property>
-                      </widget>
-                     </item>
                      <item row="0" column="2">
                       <widget class="QLineEdit" name="txt_modelo">
                        <property name="placeholderText">
@@ -616,17 +592,17 @@ QFrame{
                        </property>
                       </widget>
                      </item>
-                     <item row="0" column="1">
-                      <widget class="QLineEdit" name="txt_marca">
-                       <property name="placeholderText">
-                        <string>Marca</string>
-                       </property>
-                      </widget>
-                     </item>
                      <item row="0" column="0">
                       <widget class="QLineEdit" name="txt_patrimonio">
                        <property name="placeholderText">
                         <string>Patrimonio</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QLineEdit" name="txt_marca">
+                       <property name="placeholderText">
+                        <string>Marca</string>
                        </property>
                       </widget>
                      </item>
@@ -702,7 +678,7 @@ QFrame{
                     <property name="frameShadow">
                      <enum>QFrame::Shadow::Raised</enum>
                     </property>
-                    <layout class="QGridLayout" name="gridLayout_3">
+                    <layout class="QGridLayout" name="gridLayout_2">
                      <item row="0" column="0">
                       <widget class="QLineEdit" name="txt_patrimonio_3_saida">
                        <property name="placeholderText">
@@ -721,13 +697,6 @@ QFrame{
                       <widget class="QLineEdit" name="txt_modelo_3_saida">
                        <property name="placeholderText">
                         <string>Modelo</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="QLineEdit" name="txt_quantidade_3_saida">
-                       <property name="placeholderText">
-                        <string>Quantidade</string>
                        </property>
                       </widget>
                      </item>
