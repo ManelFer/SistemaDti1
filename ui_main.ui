@@ -150,7 +150,7 @@ QPushButton{
               <string notr="true"/>
              </property>
              <attribute name="label">
-              <string>Page 1</string>
+              <string/>
              </attribute>
              <layout class="QVBoxLayout" name="verticalLayout_4">
               <property name="spacing">
@@ -272,12 +272,12 @@ QPushButton{
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>168</width>
-               <height>277</height>
+               <width>174</width>
+               <height>290</height>
               </rect>
              </property>
              <attribute name="label">
-              <string>Page 2</string>
+              <string/>
              </attribute>
              <layout class="QVBoxLayout" name="verticalLayout_5">
               <property name="spacing">
@@ -388,14 +388,14 @@ QPushButton{
           <item>
            <widget class="QStackedWidget" name="Pages">
             <property name="currentIndex">
-             <number>3</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="pg_2_cadastrar">
              <layout class="QVBoxLayout" name="verticalLayout_7">
               <item>
                <widget class="QTabWidget" name="tabWidget">
                 <property name="currentIndex">
-                 <number>0</number>
+                 <number>1</number>
                 </property>
                 <widget class="QWidget" name="tab">
                  <attribute name="title">
@@ -487,28 +487,6 @@ background-color: rgb(4, 99, 51);
                         </widget>
                        </item>
                        <item>
-                        <widget class="QPushButton" name="btn_alterar">
-                         <property name="minimumSize">
-                          <size>
-                           <width>120</width>
-                           <height>30</height>
-                          </size>
-                         </property>
-                         <property name="cursor">
-                          <cursorShape>PointingHandCursor</cursorShape>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">QPushButton:hover{
-color: rgb(255,255,255);
-background-color: rgb(255, 85, 0);
-}</string>
-                         </property>
-                         <property name="text">
-                          <string>Alterar</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
                         <widget class="QPushButton" name="btn_excluir">
                          <property name="minimumSize">
                           <size>
@@ -585,24 +563,84 @@ QFrame{
                      <enum>QFrame::Shadow::Raised</enum>
                     </property>
                     <layout class="QGridLayout" name="gridLayout">
-                     <item row="0" column="2">
+                     <item row="6" column="0">
+                      <widget class="QDateEdit" name="date_entrada"/>
+                     </item>
+                     <item row="3" column="2">
                       <widget class="QLineEdit" name="txt_modelo">
                        <property name="placeholderText">
                         <string>Modelo</string>
                        </property>
                       </widget>
                      </item>
-                     <item row="0" column="0">
+                     <item row="3" column="0">
                       <widget class="QLineEdit" name="txt_patrimonio">
                        <property name="placeholderText">
                         <string>Patrimonio</string>
                        </property>
                       </widget>
                      </item>
-                     <item row="0" column="1">
+                     <item row="3" column="1">
                       <widget class="QLineEdit" name="txt_marca">
                        <property name="placeholderText">
                         <string>Marca</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="0">
+                      <widget class="QComboBox" name="comboBox">
+                       <item>
+                        <property name="text">
+                         <string>Notebooks</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Monitores</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Teclados</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Mouses</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Scanners</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QLineEdit" name="lineEdit_2">
+                       <property name="placeholderText">
+                        <string>Nº Fornecedor</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="2">
+                      <widget class="QLineEdit" name="txt_serial">
+                       <property name="placeholderText">
+                        <string>Nº Serial</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="6" column="1">
+                      <widget class="QLineEdit" name="txt_descricao">
+                       <property name="placeholderText">
+                        <string>Descrição</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="6" column="2">
+                      <widget class="QLineEdit" name="txt_quant">
+                       <property name="placeholderText">
+                        <string>Quantidade</string>
                        </property>
                       </widget>
                      </item>
