@@ -41,8 +41,7 @@ class DataBase():
                 id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
                 patrimonio TEXT UNIQUE NOT NULL,
                 marca TEXT NOT NULL,
-                modelo TEXT NOT NULL,
-                quantidade TEXT NOT NULL
+                modelo TEXT NOT NULL
             );
         """
         self.create_table(create_table_sql)
