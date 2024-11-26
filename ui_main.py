@@ -15,18 +15,18 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
-    QHeaderView, QLabel, QLineEdit, QMainWindow,
-    QPushButton, QSizePolicy, QSpacerItem, QStackedWidget,
-    QTabWidget, QTableWidget, QTableWidgetItem, QToolBox,
-    QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QComboBox, QDateEdit, QFrame,
+    QGridLayout, QHBoxLayout, QHeaderView, QLabel,
+    QLineEdit, QMainWindow, QPushButton, QSizePolicy,
+    QSpacerItem, QStackedWidget, QTabWidget, QTableWidget,
+    QTableWidgetItem, QToolBox, QVBoxLayout, QWidget)
 import icons_rc
 
 class Ui_Main(object):
     def setupUi(self, Main):
         if not Main.objectName():
             Main.setObjectName(u"Main")
-        Main.resize(722, 413)
+        Main.resize(728, 426)
         Main.setStyleSheet(u"background-color: rgb(249, 248, 235);")
         self.centralwidget = QWidget(Main)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -103,7 +103,7 @@ class Ui_Main(object):
 "")
         self.page = QWidget()
         self.page.setObjectName(u"page")
-        self.page.setGeometry(QRect(0, 0, 168, 277))
+        self.page.setGeometry(QRect(0, 0, 174, 290))
         self.page.setStyleSheet(u"")
         self.verticalLayout_4 = QVBoxLayout(self.page)
         self.verticalLayout_4.setSpacing(6)
@@ -147,10 +147,10 @@ class Ui_Main(object):
 
         self.verticalLayout_4.addItem(self.verticalSpacer)
 
-        self.toolBox.addItem(self.page, u"Page 1")
+        self.toolBox.addItem(self.page, u"")
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
-        self.page_2.setGeometry(QRect(0, 0, 168, 277))
+        self.page_2.setGeometry(QRect(0, 0, 174, 290))
         self.verticalLayout_5 = QVBoxLayout(self.page_2)
         self.verticalLayout_5.setSpacing(0)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
@@ -160,7 +160,7 @@ class Ui_Main(object):
 
         self.verticalLayout_5.addWidget(self.label_11)
 
-        self.toolBox.addItem(self.page_2, u"Page 2")
+        self.toolBox.addItem(self.page_2, u"")
 
         self.verticalLayout_3.addWidget(self.toolBox)
 
@@ -274,17 +274,6 @@ class Ui_Main(object):
 
         self.verticalLayout_8.addWidget(self.btn_excel)
 
-        self.btn_alterar = QPushButton(self.frame_3)
-        self.btn_alterar.setObjectName(u"btn_alterar")
-        self.btn_alterar.setMinimumSize(QSize(120, 30))
-        self.btn_alterar.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.btn_alterar.setStyleSheet(u"QPushButton:hover{\n"
-"color: rgb(255,255,255);\n"
-"background-color: rgb(255, 85, 0);\n"
-"}")
-
-        self.verticalLayout_8.addWidget(self.btn_alterar)
-
         self.btn_excluir = QPushButton(self.frame_3)
         self.btn_excluir.setObjectName(u"btn_excluir")
         self.btn_excluir.setMinimumSize(QSize(120, 30))
@@ -332,20 +321,55 @@ class Ui_Main(object):
         self.frame_4.setFrameShadow(QFrame.Shadow.Raised)
         self.gridLayout = QGridLayout(self.frame_4)
         self.gridLayout.setObjectName(u"gridLayout")
+        self.date_entrada = QDateEdit(self.frame_4)
+        self.date_entrada.setObjectName(u"date_entrada")
+
+        self.gridLayout.addWidget(self.date_entrada, 6, 0, 1, 1)
+
         self.txt_modelo = QLineEdit(self.frame_4)
         self.txt_modelo.setObjectName(u"txt_modelo")
 
-        self.gridLayout.addWidget(self.txt_modelo, 0, 2, 1, 1)
+        self.gridLayout.addWidget(self.txt_modelo, 3, 2, 1, 1)
 
         self.txt_patrimonio = QLineEdit(self.frame_4)
         self.txt_patrimonio.setObjectName(u"txt_patrimonio")
 
-        self.gridLayout.addWidget(self.txt_patrimonio, 0, 0, 1, 1)
+        self.gridLayout.addWidget(self.txt_patrimonio, 3, 0, 1, 1)
 
         self.txt_marca = QLineEdit(self.frame_4)
         self.txt_marca.setObjectName(u"txt_marca")
 
-        self.gridLayout.addWidget(self.txt_marca, 0, 1, 1, 1)
+        self.gridLayout.addWidget(self.txt_marca, 3, 1, 1, 1)
+
+        self.comboBox = QComboBox(self.frame_4)
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.setObjectName(u"comboBox")
+
+        self.gridLayout.addWidget(self.comboBox, 0, 0, 1, 1)
+
+        self.lineEdit_2 = QLineEdit(self.frame_4)
+        self.lineEdit_2.setObjectName(u"lineEdit_2")
+
+        self.gridLayout.addWidget(self.lineEdit_2, 0, 1, 1, 1)
+
+        self.txt_serial = QLineEdit(self.frame_4)
+        self.txt_serial.setObjectName(u"txt_serial")
+
+        self.gridLayout.addWidget(self.txt_serial, 0, 2, 1, 1)
+
+        self.txt_descricao = QLineEdit(self.frame_4)
+        self.txt_descricao.setObjectName(u"txt_descricao")
+
+        self.gridLayout.addWidget(self.txt_descricao, 6, 1, 1, 1)
+
+        self.txt_quant = QLineEdit(self.frame_4)
+        self.txt_quant.setObjectName(u"txt_quant")
+
+        self.gridLayout.addWidget(self.txt_quant, 6, 2, 1, 1)
 
 
         self.verticalLayout_10.addWidget(self.frame_4)
@@ -532,9 +556,9 @@ class Ui_Main(object):
         self.btn_cadastrar.setText(QCoreApplication.translate("Main", u"Cadastrar", None))
         self.btn_contatos.setText(QCoreApplication.translate("Main", u"Sobre", None))
         self.btn_sobre.setText(QCoreApplication.translate("Main", u"Contatos", None))
-        self.toolBox.setItemText(self.toolBox.indexOf(self.page), QCoreApplication.translate("Main", u"Page 1", None))
+        self.toolBox.setItemText(self.toolBox.indexOf(self.page), "")
         self.label_11.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><span style=\" font-weight:700;\">Usu\u00e1rio:</span> Manoel</p><p align=\"center\"><span style=\" font-weight:700;\">Sistema:</span> Controle</p><p align=\"center\"><span style=\" font-weight:700;\">Status:</span> Ativo</p><p align=\"center\"><span style=\" font-weight:700;\">Hora:</span> hh:mm</p></body></html>", None))
-        self.toolBox.setItemText(self.toolBox.indexOf(self.page_2), QCoreApplication.translate("Main", u"Page 2", None))
+        self.toolBox.setItemText(self.toolBox.indexOf(self.page_2), "")
         self.label.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:700;\">Sistema de Controle</span></p></body></html>", None))
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("Main", u"Patrimonio", None));
@@ -545,13 +569,22 @@ class Ui_Main(object):
         ___qtablewidgetitem3 = self.tableWidget.horizontalHeaderItem(3)
         ___qtablewidgetitem3.setText(QCoreApplication.translate("Main", u"Quantidade", None));
         self.btn_excel.setText(QCoreApplication.translate("Main", u"Gerar Excel", None))
-        self.btn_alterar.setText(QCoreApplication.translate("Main", u"Alterar", None))
         self.btn_excluir.setText(QCoreApplication.translate("Main", u"Excluir", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("Main", u"Produtos", None))
         self.label_5.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:700;\">Cadastrar</span></p></body></html>", None))
         self.txt_modelo.setPlaceholderText(QCoreApplication.translate("Main", u"Modelo", None))
         self.txt_patrimonio.setPlaceholderText(QCoreApplication.translate("Main", u"Patrimonio", None))
         self.txt_marca.setPlaceholderText(QCoreApplication.translate("Main", u"Marca", None))
+        self.comboBox.setItemText(0, QCoreApplication.translate("Main", u"Notebooks", None))
+        self.comboBox.setItemText(1, QCoreApplication.translate("Main", u"Monitores", None))
+        self.comboBox.setItemText(2, QCoreApplication.translate("Main", u"Teclados", None))
+        self.comboBox.setItemText(3, QCoreApplication.translate("Main", u"Mouses", None))
+        self.comboBox.setItemText(4, QCoreApplication.translate("Main", u"Scanners", None))
+
+        self.lineEdit_2.setPlaceholderText(QCoreApplication.translate("Main", u"N\u00ba Fornecedor", None))
+        self.txt_serial.setPlaceholderText(QCoreApplication.translate("Main", u"N\u00ba Serial", None))
+        self.txt_descricao.setPlaceholderText(QCoreApplication.translate("Main", u"Descri\u00e7\u00e3o", None))
+        self.txt_quant.setPlaceholderText(QCoreApplication.translate("Main", u"Quantidade", None))
         self.pushButton.setText(QCoreApplication.translate("Main", u"Cadastrar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("Main", u"Cadastrar", None))
         self.label_13.setText(QCoreApplication.translate("Main", u"<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:700;\">Sa\u00edda</span></p></body></html>", None))
